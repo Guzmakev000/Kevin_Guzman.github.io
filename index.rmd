@@ -22,7 +22,7 @@ My projects currently include using latent class analysis, latent class growth a
 I am also currently a member of the American Throacic Society Diversity, Equity, and Inclusion Committee. 
 
 #### More infromation 
-
+* [Professional Experience](professional.html)
 * [Github Account](https://github.com/Guzmakev000)
 * [LinkedIn Account](https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit)
 
