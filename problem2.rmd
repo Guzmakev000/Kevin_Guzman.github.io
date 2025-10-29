@@ -7,4 +7,24 @@ output:
     theme: cerulean
 ---
 
+```{r, message=FALSE, warning=FALSE, echo=FALSE}
+# Load necessary libraries
+library(tidyverse)
+library(plotly)
+library("p8105.datasets")
+```
+
 ## 
+
+```{r, message=FALSE, warning=FALSE, echo=FALSE}
+# Load Instacart dataset
+data("instacart")
+
+# Creating a subset
+
+instacart_subset <- instacart %>%
+  filter(order_number <= 20) %>% 
+  select(order_number, order_dow,order_hour_of_day, product_name, reordered) %>%   
+  drop_na(order_number)
+```
+
