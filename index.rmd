@@ -1,5 +1,5 @@
 ---
-title: "Kevin Guzman Website"
+title: "Kevin Jose Guzman, MD"
 output: 
   html_document:
     toc: true
@@ -15,4 +15,17 @@ I am a pulmonary and critical care physician by training and currently hold an a
 
 ## My projects 
 
-My projects currently include using latent class analysis, latent class growth analysis, and machine learning techniques to predict treatment outcomes in people living with MDR-TB/HIV. I also work with my PI in New York City on a project to improve screening approaches for active tuberculosis in migrant populations. 
+My projects currently include using latent class analysis, latent class growth analysis, and machine learning techniques to predict treatment outcomes in people living with MDR-TB/HIV. I also work with my PI in New York City on a project to improve screening approaches for active tuberculosis in migrant populations.
+
+## Professional Appointment 
+
+I am also currently a member of the American Throacic Society Diversity, Equity, and Inclusion Committee. 
+
+#### More infromation 
+
+* [Github Account](https://github.com/Guzmakev000)
+* [LinkedIn Account](https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit)
+
+#### Contact me 
+* [Email](kg3006@cumc.columbia.edu)
+
