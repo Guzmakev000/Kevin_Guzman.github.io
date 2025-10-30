@@ -1,10 +1,9 @@
 ---
-title: "Problem 2"
+title: "Dashboard"
 output: 
-  html_document:
-    toc: true
-    toc_float: true
-    theme: cerulean
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
 ---
 
 ```{r, message=FALSE, warning=FALSE, echo=FALSE}
@@ -12,6 +11,7 @@ output:
 library(tidyverse)
 library(plotly)
 library("p8105.datasets")
+library(flexdashboard)
 ```
 
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}
@@ -19,7 +19,10 @@ library("p8105.datasets")
 data("instacart")
 ```
 
-## Bar chart 
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}
 # Creating a subset
 bar_subset <- instacart %>%
@@ -42,7 +45,10 @@ bar_chart <- plot_ly(bar_subset,
 bar_chart
 ```
 
-## Box Plot
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}
 # Number of Products Ordered by Time of day Scattered
 box_subset <- instacart %>% 
@@ -64,7 +70,7 @@ box_plot <- plot_ly(scatter_subset,
 box_plot
 ```
 
-## Waterfall
+### Chart C
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}
 # Number of Products Ordered by Time of day Scattered
 waterfall_subset <- instacart %>% 
