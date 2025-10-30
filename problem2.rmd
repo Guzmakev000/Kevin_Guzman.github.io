@@ -44,7 +44,7 @@ bar_chart
 
 ## Box Plot
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}
-# Number of Products Ordered by Time of day Scattered
+# Number of Products Ordered by Time of day box
 box_subset <- instacart %>% 
   select(order_id, order_hour_of_day) %>% 
   drop_na(order_hour_of_day) %>% 
@@ -53,7 +53,7 @@ box_subset <- instacart %>%
   ungroup()
 
 #Scatter plot
-box_plot <- plot_ly(scatter_subset, 
+box_plot <- plot_ly(box_subset, 
                        x=~order_hour_of_day,
                        y=~total_number,
                        type='box') %>% 
@@ -66,7 +66,7 @@ box_plot
 
 ## Waterfall
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}
-# Number of Products Ordered by Time of day Scattered
+# Number of Products Ordered by Time of day waterfall
 waterfall_subset <- instacart %>% 
   select(aisle) %>% 
   drop_na(aisle) %>% 
@@ -82,5 +82,6 @@ waterfall_plot <- plot_ly(waterfall_subset,
    layout(title = "Number of Items Ordered by Type",
          xaxis = list(title = "Item"),
          yaxis = list(title = "Number of Items Ordered")) 
+
 waterfall_plot
 ```
